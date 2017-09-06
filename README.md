@@ -38,6 +38,8 @@ Link balsamiq: https://github.com/khronos-SDA/trab01/blob/master/Prototipo/Khron
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 10 principais relatórios que podero ser obtidos por meio do sistema proposto!
+O sistema fornecerá acesso rápido as informações de alunos da instituição, como:<br/>
+    -> Informações de CPF, RG, Endereço, Titulo de Eleitor, entre outras informações pessoais.<br/>
 
 O sistema proposto poderá fornecer os seguintes relatórios:<br/>
     -> Relatório de quais setores acessam determinados grupos de documentos;<br/>
