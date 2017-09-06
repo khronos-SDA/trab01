@@ -7,11 +7,10 @@ Trabalho desenvolvido durante a disciplina de BD1
 Integrantes do grupo<br>
 primeiro_componente_do_grupo: guilhermemaciel2@hotmail.com<br>
 segundo_componente_do_grupo:  landerson.lma@hotmail.com<br>
-terceiro_componente_do_grupo: mellyssah.mendes@live.com
+terceiro_componente_do_grupo: mellyssah.mendes@live.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
+Este documento contém a especificação do projeto do banco de dados Khronos SDAGD e a motivação foi melhorar o processo de matrícula, visto que é necessário trazer cópias de muitos documentos. Com esse sistema, visamos agilizar e informatizar o processo bem como reduzir a quantidade de papel utilizados pensando assim no nosso meio ambiente.  <br>
 
 ### 3.MINI-MUNDO<br>
 
