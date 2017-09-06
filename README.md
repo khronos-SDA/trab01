@@ -25,7 +25,7 @@ Neste ponto a codificação não e necessária, somente as ideias de telas devem
 
 Sugestão: https://balsamiq.com/products/mockups/<br>
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
+![Alt text](https://github.com/khronos-SDA/trab01/blob/master/Prototipo/Khronos.pdf "Protótipo")
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas.
