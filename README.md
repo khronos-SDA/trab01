@@ -30,6 +30,8 @@ Neste ponto a codificação não e necessária, somente as ideias de telas devem
 Link balsamiq: https://github.com/khronos-SDA/trab01/blob/master/Prototipo/Khronos.pdf
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
+    
+    Link da tabela de dados do sistema: https://github.com/khronos-SDA/trab01/blob/master/Modelo%20Entidade%20Relacionamento/Khronos.xlsx%20-%20Planilha2.pdf
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas.
     b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
     e deve ser criada antes do modelo conceitual
