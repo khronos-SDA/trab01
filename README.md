@@ -31,7 +31,7 @@ Link balsamiq: https://github.com/khronos-SDA/trab01/blob/master/Prototipo/Khron
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
     
- Link da tabela de dados do sistema: https://github.com/khronos-SDA/trab01/upload/master/Modelo%20Entidade%20Relacionamento
+ Link da tabela de dados do sistema: https://github.com/khronos-SDA/trab01/blob/master/Modelo%20Entidade%20Relacionamento/Khronos.xlsx
    
     
     
