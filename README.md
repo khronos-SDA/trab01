@@ -10,13 +10,13 @@ Landerson Alexandre: landerson.lma@hotmail.com<br>
 Mellyssa Stephanny: mellyssah.mendes@live.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-A Digitalização de Documentos é o processo de conversão de documentos físicos em formato digital. Este processo dinamiza extraordinariamente o acesso e a disseminação das informações entre os funcionários e colaboradores, com a visualização instantânea das imagens de documentos. Empresas que possuem documentos que precisam ser consultados e administrados de forma rápida e organizada.
-Listamos abaixo as vantagens da digitalização de arquivos:
---> Facilidade de acesso e de distribuição dos documentos;
---> Redução de tempo das atividades que requerem a análise de documentos;
---> Redução de custo com recuperação e duplicação;
---> Preservação do arquivo físico;
---> Integração de dados ativos e históricos.
+A Digitalização de Documentos é o processo de conversão de documentos físicos em formato digital. Este processo dinamiza extraordinariamente o acesso e a disseminação das informações entre os funcionários e colaboradores, com a visualização instantânea das imagens de documentos. Empresas que possuem documentos que precisam ser consultados e administrados de forma rápida e organizada.<br/>
+Listamos abaixo as vantagens da digitalização de arquivos:<br/>
+-> Facilidade de acesso e de distribuição dos documentos;<br/>
+-> Redução de tempo das atividades que requerem a análise de documentos;<br/>
+-> Redução de custo com recuperação e duplicação;<br/>
+-> Preservação do arquivo físico;<br/>
+-> Integração de dados ativos e históricos.<br/>
 Com o intuito de melhorar esse processo, propomos um sistema que realize a digitalização de documentos para melhorar o processo de matrícula no IFES Campus Serra, visto que é necessário trazer cópias de muitos documentos. Com esse sistema, visamos agilizar e informatizar o processo bem como reduzir a quantidade de papel utilizado pensando assim no nosso meio ambiente.  <br>
 
 ### 3.MINI-MUNDO<br>
