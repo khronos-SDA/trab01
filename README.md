@@ -87,11 +87,90 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br/>
     b) justifique!
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
+    ==> TABELAS RELACIONADAS AOS ALUNOS <==
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    ALUNO: Tabela que contém os dados do aluno.<br>
+         nome: campo que armazena o nome do aluno.<br>
+         codigo_curso: campo que contém o código do curso no qual o aluno está matriculado.<br>
+         matrícula: campo que armazena a matrícula ao qual o aluno está vinculado.<br>
+         data_nascimento: campo que armazena o dia em que o aluno nasceu.<br>
+    
+    RG: Tabela que contém os dados do RG do aluno.<br>
+         codigo_rg: campo que armazena o número do rg do aluno.<br>
+         pai: campo que armazena nome do pai do aluno.<br>
+         mãe: campo que armazena nome da mãe do aluno.<br>
+         código_uf: campo que armazena o código relacionado a Unidade Federativa onde o documento foi expedido.<br>
+         data_expedição: campo que armazena a data em que o documento foi expedido.<br>
+         código_oe: campo que armazena o código do órgão emissor do documento em questão.<br>
+    
+    CPF: Tabela que contém os dados do CPF do aluno.<br>
+         codigo_cpf: campo que armazena o número do cpf do aluno.<br>
+         código_oe: campo que armazena o código do órgão emissor do documento em questão.<br>
+    
+    TÍTULO ELEITOR: Tabela que contém os dados do Título de Eleitor do aluno.<br>
+         codigo_titulo: campo que armazena o código identificador do título na base de dados da Justiça Eleitoral.<br>
+         zona: campo que armazena o código identificador da zona eleitoral em que o aluno vota.<br>
+         seção: campo que armazena o numéro da seção eleitoral na zona em que o aluno vota.<br>
+         codigo_municipio: campo que armazena o código do município em que o título foi expedido.<br>
+          
+    DOCUMENTOS: Tabela que contém as informações dos documentos relacionados a cada aluno.<br>
+         codigo_tipo: código identificador de cada documento do aluno armazenado na base de dados.<br>
+         codigo_doc: número do documento do aluno relacionado a cada código.<br>
+         matricula: código identificador do aluno na base de dados.<br>
+             
+    CURSO: Tabela que contém os dados relacionados aos cursos do campus.<br>
+         codigo_curso: campo que armazena o código relacionado a determinado curso.<br>
+         nome_curso: campo que armazena a identificação do curso.<br>
+         
+    ÓRGÃO EMISSOR: Tabela que contém os dados relacionados aos órgãos emissores de cada documento.<br>
+          codigo_oe: campo que armazena o código relacionado a um determinado Órgão Emissor.<br>
+          orgao_emissor: campo que armazena o nome do órgão responsável pela emissão do documento.<br>
+         
+    UF: Tabela que contém as informações relacionadas as Unidades Federativas.<br>
+          codigo_uf: código identificador da UF na base de dados.<br>
+          nome_uf: campo que armazena o nome da UF na base de dados.<br>
+ 
+    MUNICÍPIO: Tabela que contém os dados relacionados a cada município.<br>
+         codigo_municipio: campo que armazena o código atribuído a cada município na base de dados.<br>
+         nome_municipio: campo que armazena cada município cadastrado na base de dados.<br>
+
+    CONTATO: Tabela que relaciona os contatos de cada aluno.<br>
+         matricula: código identificador do aluno na base de dados.<br>
+         codigo_tipo: código identificador de cada documento do aluno armazenado na base de dados.<br>
+         valor_contato: campo que armazena o valor de cada tipo de contato.<br>
+ 
+    TIPO CONTATO: Tabela que contém as informações dos meios de contatos fornecidos pelos alunos.<br>
+         codigo_tipo: código identificador de cada tipo de contato na base de dados.<br>
+         descrição: descrição de cada tipo de contato fornecido.<br> 
+    
+    ==> TABELAS RELACIONADAS AOS SETORES <==
+    
+    FUNCIONÁRIO: Tabela que contém os dados dos funcionários do campus que podem ter acesso ao sistema.<br>
+         nome: campo que armazena o nome do funcionário.<br>
+         cpf: campo que armazena o numero do cpf do funcionário.<br>
+         rg: campo que armazena o número do rg do funcionário.<br>
+         siape: campo que armazena a matrícula referente a cada funcionário.<br>
+         codigo_cargo: campo que armazena o código relacionado a cada cargo ocupado pelo funcionário.<br>
+         codigo_setor: campo que armazena o código referente a cada setor.<br>
+    
+    CARGO: Tabela que contém os dados relacionados aos cargos ocupados pelos funcionários.<br>
+         codigo_cargo: campo que armazena o código de cada cargo na base de dados.<br>
+         cargo: campo que armazena a informação do cargo prrenchido por cada funcionário.<br>
+
+    SETOR: Tabela qe contém o mapeamneto referente a cada setor.<br>
+         codigo_setor: campo que armazena o código referente a cada setor.<br>
+         setor: campo que armazena o nome de cada setor.<br>
+         siape_coordenador: identificador do coordenador de cada setor.<br>
+
+    CONTATO: Tabela que contém o mapeamento dos tipos de contato.<br>
+         siape: campo que armazena a matrícula referente a cada funcionário.<br>
+         codigo_tipo: código identificador de cada contato do funcionário armazenado na base de dados.<br>
+         valor_contato: campo que armazena o valor de cada tipo de contato.<br>
+
+    TIPO CONTATO: Tabela que contém o mapeamento dos tipos de contato.<br>
+         codigo_tipo: código identificador de cada tipo de contato na base de dados.<br>
+         descrição: descrição de cada tipo de contato relacionado ao funcionário.<br>  
+    
 
 
 ### 6	MODELO LÓGICO<br>
