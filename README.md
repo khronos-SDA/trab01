@@ -1,4 +1,4 @@
-# TRABALHO 01:  Título do Trabalho
+# TRABALHO 01:  Khronos-Sistema de Digitalização de Arquivos
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
@@ -6,11 +6,18 @@ Trabalho desenvolvido durante a disciplina de BD1
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Guilherme Maciel: guilhermemaciel2@hotmail.com<br>
-Landerson Alexandre:  landerson.lma@hotmail.com<br>
+Landerson Alexandre: landerson.lma@hotmail.com<br>
 Mellyssa Stephanny: mellyssah.mendes@live.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados Khronos SDAGD e a motivação foi melhorar o processo de matrícula, visto que é necessário trazer cópias de muitos documentos. Com esse sistema, visamos agilizar e informatizar o processo bem como reduzir a quantidade de papel utilizados pensando assim no nosso meio ambiente.  <br>
+A Digitalização de Documentos é o processo de conversão de documentos físicos em formato digital. Este processo dinamiza extraordinariamente o acesso e a disseminação das informações entre os funcionários e colaboradores, com a visualização instantânea das imagens de documentos. Empresas que possuem documentos que precisam ser consultados e administrados de forma rápida e organizada.
+Listamos abaixo as vantagens da digitalização de arquivos:
+--> Facilidade de acesso e de distribuição dos documentos;
+--> Redução de tempo das atividades que requerem a análise de documentos;
+--> Redução de custo com recuperação e duplicação;
+--> Preservação do arquivo físico;
+--> Integração de dados ativos e históricos.
+Com o intuito de melhorar esse processo, propomos um sistema que realize a digitalização de documentos para melhorar o processo de matrícula no IFES Campus Serra, visto que é necessário trazer cópias de muitos documentos. Com esse sistema, visamos agilizar e informatizar o processo bem como reduzir a quantidade de papel utilizado pensando assim no nosso meio ambiente.  <br>
 
 ### 3.MINI-MUNDO<br>
 
