@@ -60,7 +60,7 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br/>
 
 ### 5.MODELO CONCEITUAL<br>
 
-![alt text](https://imgur.com/TpaWgMO)
+![Screenshot](conceitual.png)
 
     A) NOTACAO ENTIDADE RELACIONAMENTO 
         * Para nosso prótótipo limitaremos o modelo conceitual nas 6 principais entidades do escopo
