@@ -142,36 +142,6 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br/>
     TIPO CONTATO: Tabela que contém as informações dos meios de contatos fornecidos pelos alunos.
          codigo_tipo: código identificador de cada tipo de contato na base de dados.
          descrição: descrição de cada tipo de contato fornecido.
-    
-                                       ==> TABELAS RELACIONADAS AOS SETORES <==
-    
-    FUNCIONÁRIO: Tabela que contém os dados dos funcionários do campus que podem ter acesso ao sistema.
-         nome: campo que armazena o nome do funcionário.
-         cpf: campo que armazena o numero do cpf do funcionário.
-         rg: campo que armazena o número do rg do funcionário.
-         siape: campo que armazena a matrícula referente a cada funcionário.
-         codigo_cargo: campo que armazena o código relacionado a cada cargo ocupado pelo funcionário.
-         codigo_setor: campo que armazena o código referente a cada setor.
-    
-    CARGO: Tabela que contém os dados relacionados aos cargos ocupados pelos funcionários.
-         codigo_cargo: campo que armazena o código de cada cargo na base de dados.
-         cargo: campo que armazena a informação do cargo prrenchido por cada funcionário.
-
-    SETOR: Tabela qe contém o mapeamneto referente a cada setor.
-         codigo_setor: campo que armazena o código referente a cada setor.
-         setor: campo que armazena o nome de cada setor.
-         siape_coordenador: identificador do coordenador de cada setor.
-
-    CONTATO: Tabela que contém o mapeamento dos tipos de contato.
-         siape: campo que armazena a matrícula referente a cada funcionário.
-         codigo_tipo: código identificador de cada contato do funcionário armazenado na base de dados.
-         valor_contato: campo que armazena o valor de cada tipo de contato.
-
-    TIPO CONTATO: Tabela que contém o mapeamento dos tipos de contato.
-         codigo_tipo: código identificador de cada tipo de contato na base de dados.
-         descrição: descrição de cada tipo de contato relacionado ao funcionário.  
-    
-
 
 ### 6	MODELO LÓGICO<br>
         a) inclusão do modelo lógico do banco de dados
