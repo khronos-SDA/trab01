@@ -80,12 +80,12 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br/>
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
+
+    a) Campo documento: em nosso projeto optamos pela criação da tabela "documento" com herança para as tabelas "RG" e "Titulo_Eleitor" 
+    para que os atributos "numero_documento" e "data_expedição" sejam herdados de "documento".
     
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
+    b) Campo Tipo_documento: optamos pela criação da tabela "Tipo_documento" para que carregasse consigo qual é o tipo do documento 
+    buscado no momento. O atributo "descrição" desta tabela possui a informação desejada para esse caso.
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
                                             ==> TABELAS RELACIONADAS AOS ALUNOS <==
