@@ -145,6 +145,7 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br/>
          descrição: descrição de cada tipo de contato fornecido.
 
 ### 6	MODELO LÓGICO<br>
+       
         a) inclusão do modelo lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
@@ -152,9 +153,8 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br/>
 >## Marco de Entrega 02 em: (Data definida no cronograma)<br>
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas DDL 
-        (criação de tabelas, alterações, etc..)
-          
+        O modelo físico pode ser encontrado [aqui] (https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/estruturas.sql).
+                
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
