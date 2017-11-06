@@ -81,11 +81,11 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br/>
 
 #### 5.2 DECISÕES DE PROJETO
 
-    a) Campo documento: em nosso projeto optamos pela criação da tabela "documento" com herança para as tabelas "RG" e "Titulo_Eleitor" 
-    para que os atributos "numero_documento" e "data_expedição" sejam herdados de "documento".
+    a) Campo documento: em nosso projeto optamos pela criação da tabela "documento" com herança para as tabelas
+    "RG" e "Titulo_Eleitor" para que os atributos "numero_documento" e "data_expedição" sejam herdados de "documento".
     
-    b) Campo Tipo_documento: optamos pela criação da tabela "Tipo_documento" para que carregasse consigo qual é o tipo do documento 
-    buscado no momento. O atributo "descrição" desta tabela possui a informação desejada para esse caso.
+    b) Campo Tipo_documento: optamos pela criação da tabela "Tipo_documento" para que carregasse consigo qual é o
+    tipo do documento buscado no momento. O atributo "descrição" desta tabela possui a informação desejada para esse caso.
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
                                             ==> TABELAS RELACIONADAS AOS ALUNOS <==
