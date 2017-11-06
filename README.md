@@ -72,7 +72,8 @@ Imagem do modelo conceitual: https://imgur.com/qEDBiIs
     "RG" e "Titulo_Eleitor" para que os atributos "numero_documento" e "data_expedição" sejam herdados de "documento".
     
     b) Campo Tipo_documento: optamos pela criação da tabela "Tipo_documento" para que carregasse consigo qual é o
-    tipo do documento buscado no momento. O atributo "descrição" desta tabela possui a informação desejada para esse caso.
+    tipo do documento buscado no momento. O atributo "descrição" desta tabela possui a informação desejada para esse
+    caso.
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
                                             ==> TABELAS RELACIONADAS AOS ALUNOS <==
