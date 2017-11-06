@@ -81,6 +81,10 @@ Imagem do modelo conceitual: https://imgur.com/qEDBiIs
     d) As tabelas "RG" e "Titulo Eleitor" são essenciais, tendo em vista que é preciso associá-las às tabelas "UF"
     "Orgão Emissor" e "Municipio" de tal forma que "RG" não seja associada a "Municipio", e "Titulo Eleitor" não
     seja associada a "UF".
+    
+    c) A tabela "CPF" está omitida, tendo sua existencia em nosso modelo associada a tabela "Documento" uma vez
+    que o unico atributo associado a tabela "CPF" seria o número do cpf em si, que está sendo representado por
+    "id_documento" na tabela "Documento".
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
                                             ==> TABELAS RELACIONADAS AOS ALUNOS <==
