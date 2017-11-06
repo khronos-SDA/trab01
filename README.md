@@ -74,6 +74,13 @@ Imagem do modelo conceitual: https://imgur.com/qEDBiIs
     b) Campo Tipo_documento: optamos pela criação da tabela "Tipo_documento" para que carregasse consigo qual é o
     tipo do documento buscado no momento. O atributo "descrição" desta tabela possui a informação desejada para cada
     caso (CPF, RG ou Titulo Eleitor).
+    
+    c) O atributo "id_documento" da tabela "Documento" é uma chave primaria e estrangeira nas tabelas "RG" e 
+    "Titulo Eleitor", já que se trata do número destes documentos (Além do CPF).
+    
+    d) As tabelas "RG" e "Titulo Eleitor" são essenciais, tendo em vista que é preciso associá-las às tabelas "UF"
+    "Orgão Emissor" e "Municipio" de tal forma que "RG" não seja associada a "Municipio", e "Titulo Eleitor" não
+    seja associada a "UF".
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
                                             ==> TABELAS RELACIONADAS AOS ALUNOS <==
