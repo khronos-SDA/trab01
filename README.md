@@ -63,8 +63,8 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br/>
 Imagem do modelo conceitual: https://imgur.com/qEDBiIs        
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: [Jardielma]
+    [Grupo02]: [Tadeu]
 
 #### 5.2 DECISÕES DE PROJETO
 
