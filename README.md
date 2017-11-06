@@ -60,7 +60,7 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br/>
 
 ### 5.MODELO CONCEITUAL<br>
    
-Imagem do modelo conceitual: https://imgur.com/qEDBiIs        
+Imagem do modelo conceitual: https://github.com/khronos-SDA/trab01/blob/master/images/conceitual.png       
     
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Jardielma]
