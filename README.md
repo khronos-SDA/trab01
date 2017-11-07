@@ -23,8 +23,6 @@ Listamos abaixo as vantagens da digitalização de arquivos:<br/>
 
 ### 3. MINI-MUNDO<br>
 
-Link mini-mundo: https://github.com/khronos-SDA/trab01/blob/master/Minimundo.docx
-
 Os setores administrativos do IFES Campus Serra tem a necessidade de um sistema que armazene e gerencie documentos. O sistema deverá permitir que documentos físicos sejam armazenados, analisados e após extraídas suas informações sejam armazenados digitalmente, com o intuito de diminuir o uso da quantidade de papéis e do espaço de armazenamento físico. Com o intuito de melhorar esse processo, propomos um sistema que realize a digitalização de documentos para melhorar o processo de matrícula no IFES Campus Serra, visto que é necessário trazer cópias de muitos documentos. Com esse sistema, visamos agilizar e informatizar o processo bem como reduzir a quantidade de papel utilizado pensando assim no nosso meio ambiente.  <br>
 
 O sistema deverá permitir, além do acesso de cada setor, a entrada de dados, que neste caso são os documentos. Inicialmente RG, CPF e Titulo de Eleitor. Ao fazer a entrada desses novos dados, este setor tem o privilégio de ser o detentor deles. Sendo assim somente ele, ou quem ele permitir, terá acesso a esses dados. Ele deverá permitir que os documentos que estão em posse de um setor, possam ser compartilhados com outro setor que necessite de tal informação. Fazendo assim, esse outro setor terá o direito de visualizar os dados permitidos pelo detentor dos documentos por tempo determinado. Além disso, a visualização dos dados deverá ser feita de maneira simples e em formato, no mínimo, semelhante ao original.
@@ -124,7 +122,7 @@ que o único atributo associado a tabela "CPF" seria o número do cpf em si, que
          
 *__ÓRGÃO EMISSOR__*: Tabela que contém os dados relacionados aos órgãos emissores de cada documento<br>
 - *codigo_oe*: campo que armazena o código relacionado a um determinado Órgão Emissor<br>
-- *orgao_emisso*r: campo que armazena o nome do órgão responsável pela emissão do documento<br>
+- *orgao_emissor*: campo que armazena o nome do órgão responsável pela emissão do documento<br>
          
 *__UF__*: Tabela que contém as informações relacionadas as Unidades Federativas<br>
 - *codigo_uf*: código identificador da UF na base de dados<br>
