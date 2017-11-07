@@ -1,29 +1,31 @@
-# TRABALHO 01:  Khronos-Sistema de Digitalização de Arquivos
-Trabalho desenvolvido durante a disciplina de BD1
+# TRABALHO 01:  **Khronos-Sistema de Digitalização de Arquivos**
+Trabalho desenvolvido durante a disciplina de BD1 no semestre 2017/2.
 
 # Sumário
 
 ### 1. COMPONENTES<br>
-Integrantes do grupo<br>
-Guilherme Maciel: guilhermemaciel2@hotmail.com<br>
-Landerson Alexandre: landerson.lma@hotmail.com<br>
-Mellyssa Stephanny: mellyssah.mendes@live.com<br>
 
-### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-A Digitalização de Documentos é o processo de conversão de documentos físicos em formato digital. Este processo dinamiza extraordinariamente o acesso e a disseminação das informações entre os funcionários e colaboradores, com a visualização instantânea das imagens de documentos. Empresas que possuem documentos que precisam ser consultados e administrados de forma rápida e organizada.<br/>
+- Guilherme Maciel:    guilhermemaciel2@hotmail.com<br>
+- Landerson Alexandre: landerson.lma@hotmail.com<br>
+- Mellyssa Stephanny:  mellyssah.mendes@live.com<br>
+
+### 2. INTRODUÇÃO E MOTIVAÇAO<br>
+A Digitalização de Documentos é o processo de conversão de documentos físicos em formato digital. Este processo dinamiza extraordinariamente o acesso e a disseminação das informações entre os funcionários e colaboradores, com a visualização instantânea das imagens de documentos. 
+Os documentos passam por um processo de preparação para que se tornem aptos à digitalização (higienização, retirada de grampos ou qualquer objeto que prejudique o acesso do documento ao scanner). Em seguida são escaneados, tratados e indexados por lote de documentos, de acordo com as especificações  determinadas pelo projeto. Após esse processo, as imagens e dados são armazenados em um software ou em arquivos para melhor organização das imagens. 
+A Digitalização é indicada para empresas que possuem documentos que precisam ser consultados e administrados de forma rápida e organizada.<br/>
 Listamos abaixo as vantagens da digitalização de arquivos:<br/>
--> Facilidade de acesso e de distribuição dos documentos;<br/>
--> Redução de tempo das atividades que requerem a análise de documentos;<br/>
--> Redução de custo com recuperação e duplicação;<br/>
--> Preservação do arquivo físico;<br/>
--> Integração de dados ativos e históricos.<br/>
-Com o intuito de melhorar esse processo, propomos um sistema que realize a digitalização de documentos para melhorar o processo de matrícula no IFES Campus Serra, visto que é necessário trazer cópias de muitos documentos. Com esse sistema, visamos agilizar e informatizar o processo bem como reduzir a quantidade de papel utilizado pensando assim no nosso meio ambiente.  <br>
+- Facilidade de acesso e de distribuição dos documentos;<br/>
+- Redução de tempo das atividades que requerem a análise de documentos;<br/>
+- Redução de custo com recuperação e duplicação;<br/>
+- Preservação do arquivo físico;<br/>
+- Integração de dados ativos e históricos.<br/>
 
-### 3.MINI-MUNDO<br>
+
+### 3. MINI-MUNDO<br>
 
 Link mini-mundo: https://github.com/khronos-SDA/trab01/blob/master/Minimundo.docx
 
-Os setores administrativos do IFES Campus Serra tem a necessidade de um sistema que armazene e gerencie documentos. O sistema deverá permitir que documentos físicos sejam armazenados, analisados e após extraídas suas informações sejam armazenados digitalmente, com o intuito de diminuir o uso da quantidade de papéis e do espaço de armazenamento físico.
+Os setores administrativos do IFES Campus Serra tem a necessidade de um sistema que armazene e gerencie documentos. O sistema deverá permitir que documentos físicos sejam armazenados, analisados e após extraídas suas informações sejam armazenados digitalmente, com o intuito de diminuir o uso da quantidade de papéis e do espaço de armazenamento físico. Com o intuito de melhorar esse processo, propomos um sistema que realize a digitalização de documentos para melhorar o processo de matrícula no IFES Campus Serra, visto que é necessário trazer cópias de muitos documentos. Com esse sistema, visamos agilizar e informatizar o processo bem como reduzir a quantidade de papel utilizado pensando assim no nosso meio ambiente.  <br>
 
 O sistema deverá permitir, além do acesso de cada setor, a entrada de dados, que neste caso são os documentos. Inicialmente RG, CPF e Titulo de Eleitor. Ao fazer a entrada desses novos dados, este setor tem o privilégio de ser o detentor deles. Sendo assim somente ele, ou quem ele permitir, terá acesso a esses dados. Ele deverá permitir que os documentos que estão em posse de um setor, possam ser compartilhados com outro setor que necessite de tal informação. Fazendo assim, esse outro setor terá o direito de visualizar os dados permitidos pelo detentor dos documentos por tempo determinado. Além disso, a visualização dos dados deverá ser feita de maneira simples e em formato, no mínimo, semelhante ao original.
 
@@ -34,125 +36,119 @@ As vantagens da digitalização de documentos consiste na maior segurança dos d
 De RG será armazenado seu número, nome do pai e da mãe e data de expedição. De CPF será armazenado apenas o seu número. De Título de Eleitor será armazenado seu número, seção e zona.
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
+- [Mockups](https://github.com/khronos-SDA/trab01/blob/master/Prototipo/Khronos.pdf)
 
-Link balsamiq: https://github.com/khronos-SDA/trab01/blob/master/Prototipo/Khronos.pdf
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
     
- Link da tabela de dados do sistema: https://github.com/khronos-SDA/trab01/blob/master/Modelo%20Entidade%20Relacionamento/Khronos.xlsx
-   
-    
-    
+- [Tabela geral](https://github.com/khronos-SDA/trab01/blob/master/Modelo%20Entidade%20Relacionamento/Khronos.xlsx)
+ 
+     
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 10 principais relatórios que podero ser obtidos por meio do sistema proposto!
-O sistema fornecerá acesso rápido as informações de alunos da instituição, como:<br/>
-    -> Informações de CPF, RG, Endereço, Titulo de Eleitor, entre outras informações pessoais.<br/>
 
-O sistema proposto poderá fornecer os seguintes relatórios:<br/>
-    -> Relatório de quais setores acessam determinados grupos de documentos;<br/>
-    -> Relatório de alunos que precisam atualizar documentos;<br/>
-    -> Relatório que mostra os setores que mais pedem permissão de acesso;<br/>
-    -> Relatório de setores que mais inserem documentos no sistema;<br/>
+O sistema fornecerá acesso rápido as informações de alunos da instituição, como:<br/>
+    - Informações de CPF, RG, Endereço, Titulo de Eleitor, entre outras informações pessoais.<br/>
+
+O sistema proposto poderá fornecer os seguintes relatórios:<br>
+    - Relatório de quais setores acessam determinados grupos de documentos;<br/>
+    - Relatório de alunos que precisam atualizar documentos;<br/>
+    - Relatório que mostra os setores que mais pedem permissão de acesso;<br/>
+    - Relatório de setores que mais inserem documentos no sistema;<br/>
     
->## Marco de Entrega 01 em: (Data definida no cronograma)<br>
+>## Marco de Entrega 01 em: (06/09/2017)<br>
 
 ### 5.MODELO CONCEITUAL<br>
    
-Imagem do modelo conceitual: https://github.com/khronos-SDA/trab01/blob/master/images/conceitual.png       
+- [Modelo Conceitual](https://github.com/khronos-SDA/trab01/blob/master/images/conceitual.png)       
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Jardielma]
-    [Grupo02]: [Tadeu]
+
+   **NetIfes**: Jardielma<br>
+   **Ido**: Tadeu<br>
 
 #### 5.2 DECISÕES DE PROJETO
 
-    a) Campo documento: em nosso projeto optamos pela criação da tabela "documento" com herança para as tabelas
-    "RG" e "Titulo_Eleitor" para que os atributos "numero_documento" e "data_expedição" sejam herdados de "documento".
+- Campo documento: em nosso projeto optamos pela criação da tabela "documento" com herança para as tabelas
+"RG" e "Titulo_Eleitor" para que os atributos "numero_documento" e "data_expedição" sejam herdados de "documento".
     
-    b) Campo Tipo_documento: optamos pela criação da tabela "Tipo_documento" para que carregasse consigo qual é o
-    tipo do documento buscado no momento. O atributo "descrição" desta tabela possui a informação desejada para cada
-    caso (CPF, RG ou Titulo Eleitor).
+- Campo Tipo_documento: optamos pela criação da tabela "Tipo_documento" para que carregasse consigo qual é o
+tipo do documento buscado no momento. O atributo "descrição" desta tabela possui a informação desejada para cada
+caso (CPF, RG ou Titulo Eleitor).
     
-    c) O atributo "id_documento" da tabela "Documento" é uma chave primaria e estrangeira nas tabelas "RG" e 
-    "Titulo Eleitor", já que se trata do número destes documentos (Além do CPF).
+- O atributo "id_documento" da tabela "Documento" é uma chave primária e estrangeira nas tabelas "RG" e 
+"Titulo Eleitor", já que se trata do número destes documentos (além do CPF).
     
-    d) As tabelas "RG" e "Titulo Eleitor" são essenciais, tendo em vista que é preciso associá-las às tabelas "UF"
-    "Orgão Emissor" e "Municipio" de tal forma que "RG" não seja associada a "Municipio", e "Titulo Eleitor" não
-    seja associada a "UF".
+- As tabelas "RG" e "Titulo Eleitor" são essenciais, tendo em vista que é preciso associá-las às tabelas "UF"
+"Orgão Emissor" e "Municipio" de tal forma que "RG" não seja associada a "Municipio", e "Titulo Eleitor" não
+seja associada a "UF".
     
-    c) A tabela "CPF" está omitida, tendo sua existencia em nosso modelo associada a tabela "Documento" uma vez
-    que o unico atributo associado a tabela "CPF" seria o número do cpf em si, que está sendo representado por
-    "id_documento" na tabela "Documento".
+- A tabela "CPF" está omitida, tendo sua existencia em nosso modelo associada a tabela "Documento" uma vez
+que o único atributo associado a tabela "CPF" seria o número do cpf em si, que está sendo representado por
+"id_documento" na tabela "Documento".
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
                                             ==> TABELAS RELACIONADAS AOS ALUNOS <==
     
-    ALUNO: Tabela que contém os dados do aluno.
-         nome: campo que armazena o nome do aluno.
-         codigo_curso: campo que contém o código do curso no qual o aluno está matriculado.
-         matrícula: campo que armazena a matrícula ao qual o aluno está vinculado.
-         data_nascimento: campo que armazena o dia em que o aluno nasceu.
+*__ALUNO__*: Tabela que contém os dados do aluno
+- *nome*: campo que armazena o nome do aluno
+- *codigo_curso*: campo que contém o código do curso no qual o aluno está matriculado
+- *matrícula*: campo que armazena a matrícula ao qual o aluno está vinculado
+- *data_nascimento*: campo que armazena o dia em que o aluno nasceu
     
-    RG: Tabela que contém os dados do RG do aluno.
-         codigo_rg: campo que armazena o número do rg do aluno.
-         pai: campo que armazena nome do pai do aluno.
-         mãe: campo que armazena nome da mãe do aluno.
-         código_uf: campo que armazena o código relacionado a Unidade Federativa onde o documento foi expedido.
-         data_expedição: campo que armazena a data em que o documento foi expedido.
-         código_oe: campo que armazena o código do órgão emissor do documento em questão.
+*__RG__*: Tabela que contém os dados do RG do aluno<br>
+- *codigo_rg*: campo que armazena o número do rg do aluno<br>
+- *pai*: campo que armazena nome do pai do aluno<br>
+- *mãe*: campo que armazena nome da mãe do aluno<br>
+- *código_uf*: campo que armazena o código relacionado a Unidade Federativa onde o documento foi expedido<br>
+- *data_expedição*: campo que armazena a data em que o documento foi expedido<br>
+- *código_oe*: campo que armazena o código do órgão emissor do documento em questão<br>
     
-    CPF: Tabela que contém os dados do CPF do aluno.
-         codigo_cpf: campo que armazena o número do cpf do aluno.
-         código_oe: campo que armazena o código do órgão emissor do documento em questão.
+*__CPF__*: Tabela que contém os dados do CPF do aluno<br>
+- *codigo_cpf*: campo que armazena o número do cpf do aluno<br>
+- *código_oe*: campo que armazena o código do órgão emissor do documento em questão<br>
     
-    TÍTULO ELEITOR: Tabela que contém os dados do Título de Eleitor do aluno.
-         codigo_titulo: campo que armazena o código identificador do título na base de dados da Justiça Eleitoral.
-         zona: campo que armazena o código identificador da zona eleitoral em que o aluno vota.
-         seção: campo que armazena o numéro da seção eleitoral na zona em que o aluno vota.
-         codigo_municipio: campo que armazena o código do município em que o título foi expedido.
+*__TÍTULO ELEITOR__*: Tabela que contém os dados do Título de Eleitor do aluno<br>
+- *codigo_titulo*: campo que armazena o código identificador do título na base de dados da Justiça Eleitoral<br>
+- *zona*: campo que armazena o código identificador da zona eleitoral em que o aluno vota<br>
+- *seção*: campo que armazena o número da seção eleitoral na zona em que o aluno vota<br>
+- *codigo_municipio*: campo que armazena o código do município em que o título foi expedido<br>
           
-    DOCUMENTOS: Tabela que contém as informações dos documentos relacionados a cada aluno.
-         codigo_tipo: código identificador de cada documento do aluno armazenado na base de dados.
-         codigo_doc: número do documento do aluno relacionado a cada código.
-         matricula: código identificador do aluno na base de dados.
+*__DOCUMENTOS__*: Tabela que contém as informações dos documentos relacionados a cada aluno<br>
+- *codigo_tipo*: código identificador de cada documento do aluno armazenado na base de dados<br>
+- *codigo_doc*: número do documento do aluno relacionado a cada código<br>
+- *matricula*: código identificador do aluno na base de dados<br>
              
-    CURSO: Tabela que contém os dados relacionados aos cursos do campus.
-         codigo_curso: campo que armazena o código relacionado a determinado curso.
-         nome_curso: campo que armazena a identificação do curso.
+*__CURSO__*: Tabela que contém os dados relacionados aos cursos do campus<br>
+- *codigo_curso*: campo que armazena o código relacionado a determinado curso<br>
+- *nome_curso*: campo que armazena a identificação do curso<br>
          
-    ÓRGÃO EMISSOR: Tabela que contém os dados relacionados aos órgãos emissores de cada documento.
-          codigo_oe: campo que armazena o código relacionado a um determinado Órgão Emissor.
-          orgao_emissor: campo que armazena o nome do órgão responsável pela emissão do documento.
+*__ÓRGÃO EMISSOR__*: Tabela que contém os dados relacionados aos órgãos emissores de cada documento<br>
+- *codigo_oe*: campo que armazena o código relacionado a um determinado Órgão Emissor<br>
+- *orgao_emisso*r: campo que armazena o nome do órgão responsável pela emissão do documento<br>
          
-    UF: Tabela que contém as informações relacionadas as Unidades Federativas.
-          codigo_uf: código identificador da UF na base de dados.
-          nome_uf: campo que armazena o nome da UF na base de dados.
+*__UF__*: Tabela que contém as informações relacionadas as Unidades Federativas<br>
+- *codigo_uf*: código identificador da UF na base de dados<br>
+- *nome_uf*: campo que armazena o nome da UF na base de dados<br>
  
-    MUNICÍPIO: Tabela que contém os dados relacionados a cada município.
-         codigo_municipio: campo que armazena o código atribuído a cada município na base de dados.
-         nome_municipio: campo que armazena cada município cadastrado na base de dados.
+*__MUNICÍPIO__*: Tabela que contém os dados relacionados a cada município<br>
+- *codigo_municipio*: campo que armazena o código atribuído a cada município na base de dados<br>
+- *nome_municipio*: campo que armazena cada município cadastrado na base de dados<b/>
 
-    CONTATO: Tabela que relaciona os contatos de cada aluno.
-         matricula: código identificador do aluno na base de dados.
-         codigo_tipo: código identificador de cada documento do aluno armazenado na base de dados.
-         valor_contato: campo que armazena o valor de cada tipo de contato.
+*__CONTATO__*: Tabela que relaciona os contatos de cada aluno<br>
+- *matricula*: código identificador do aluno na base de dados<br>
+- *codigo_tipo*: código identificador de cada documento do aluno armazenado na base de dados<br>
+- *valor_contato*: campo que armazena o valor de cada tipo de contato<br>
  
-    TIPO CONTATO: Tabela que contém as informações dos meios de contatos fornecidos pelos alunos.
-         codigo_tipo: código identificador de cada tipo de contato na base de dados.
-         descrição: descrição de cada tipo de contato fornecido.
+*__TIPO CONTATO__*: Tabela que contém as informações dos meios de contatos fornecidos pelos alunos<br>
+- *codigo_tipo*: código identificador de cada tipo de contato na base de dados<br>
+- *descrição*: descrição de cada tipo de contato fornecido<br>
 
 ### 6	MODELO LÓGICO<br>
-       
-        a) inclusão do modelo lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+- [Modelo lógico](https://github.com/khronos-SDA/trab01/blob/master/images/logico.png)
 
->## Marco de Entrega 02 em: (Data definida no cronograma)<br>
 
 ### 7	MODELO FÍSICO<br>
-        O modelo físico pode ser encontrado [aqui] (https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/estruturas.sql).
+- [Modelo físico](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/estruturas.sql)
                 
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
@@ -184,7 +180,7 @@ Imagem do modelo conceitual: https://github.com/khronos-SDA/trab01/blob/master/i
      c) Criar no mínimo 2 com operação de renomear campo
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 4) <br>
 
->## Marco de Entrega 03 em: (Data definida no cronograma)<br>
+>## Marco de Entrega 03 em: 06/11/2017<br>
     
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
