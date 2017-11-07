@@ -1,111 +1,96 @@
 /* Lógico_1: */
 
-CREATE TABLE Aluno (
+CREATE TABLE aluno (
     nome Varchar(150),
     matricula Varchar(13) PRIMARY KEY,
-    FK_Curso_codigo_curso Serial
+    FK_curso_codigo_curso Serial
 );
 
-CREATE TABLE RG (
+CREATE TABLE rg (
     nome_pai Varchar(150),
     nome_mae Varchar(150),
-    FK_Documento_id_documento Integer PRIMARY KEY,
-    FK_UF_codigo_uf Serial,
-    data_nascimento Date
+    data_de_nascimento Date,
+    FK_documento_id_documento Unsigned Integer PRIMARY KEY,
+    FK_uf_codigo_uf Serial
 );
 
-CREATE TABLE Titulo_eleitor (
+CREATE TABLE titulo_eleitor (
     zona Integer,
     secao Integer,
-    FK_Documento_id_documento Integer PRIMARY KEY,
-    FK_Municipio_codigo_municipio Serial
+    FK_documento_id_documento Unsigned Integer PRIMARY KEY,
+    FK_municipio_codigo_municipio Serial
 );
 
-CREATE TABLE Municipio (
+CREATE TABLE municipio (
     codigo_municipio Serial PRIMARY KEY,
     nome_municipio Varchar(150)
 );
 
-CREATE TABLE Orgao_emissor (
+CREATE TABLE orgao_emissor (
     codigo_oe Serial PRIMARY KEY,
     nome Varchar(150)
 );
 
-CREATE TABLE UF (
+CREATE TABLE uf (
     codigo_uf Serial PRIMARY KEY,
-    Nome Varchar(150)
+    nome Varchar(150)
 );
 
-CREATE TABLE Curso (
+CREATE TABLE curso (
     codigo_curso Serial PRIMARY KEY,
-    Nome Varchar(150)
+    nome Varchar(150)
 );
 
-CREATE TABLE Documento (
-    numero_documento Integer,
-    id_documento Integer PRIMARY KEY,
-    data_expedicao Date,
-    FK_Aluno_matricula Varchar(13),
-    FK_Tipo_documento_codigo_tipo Serial
+CREATE TABLE documento (
+    numero_documento Unsigned Integer,
+    id_documento Unsigned Integer PRIMARY KEY,
+    data_de_expedicao Date,
+    FK_orgao_emissor_codigo_oe Serial,
+    FK_aluno_matricula Varchar(13),
+    FK_tipo_documento_codigo_tipo Serial
 );
 
-CREATE TABLE Tipo_documento (
+CREATE TABLE tipo_documento (
     codigo_tipo Serial PRIMARY KEY,
     descricao Varchar(100)
 );
-
-CREATE TABLE Pertence_Orgao_emissor_RG_Titulo_eleitor (
-    FK_Orgao_emissor_codigo_oe Serial,
-    FK_RG_FK_Documento_id_documento Integer,
-    FK_Titulo_eleitor_FK_Documento_id_documento Integer
-);
  
-ALTER TABLE Aluno ADD CONSTRAINT FK_Aluno_1
-    FOREIGN KEY (FK_Curso_codigo_curso)
-    REFERENCES Curso (codigo_curso)
+ALTER TABLE aluno ADD CONSTRAINT FK_aluno_1
+    FOREIGN KEY (FK_curso_codigo_curso)
+    REFERENCES curso (codigo_curso)
     ON DELETE CASCADE ON UPDATE CASCADE;
  
-ALTER TABLE RG ADD CONSTRAINT FK_RG_1
-    FOREIGN KEY (FK_Documento_id_documento)
-    REFERENCES Documento (id_documento)
+ALTER TABLE rg ADD CONSTRAINT FK_rg_1
+    FOREIGN KEY (FK_documento_id_documento)
+    REFERENCES documento (id_documento)
     ON DELETE CASCADE ON UPDATE CASCADE;
  
-ALTER TABLE RG ADD CONSTRAINT FK_RG_2
-    FOREIGN KEY (FK_UF_codigo_uf)
-    REFERENCES UF (codigo_uf)
+ALTER TABLE rg ADD CONSTRAINT FK_rg_2
+    FOREIGN KEY (FK_uf_codigo_uf)
+    REFERENCES uf (codigo_uf)
     ON DELETE CASCADE ON UPDATE CASCADE;
  
-ALTER TABLE Titulo_eleitor ADD CONSTRAINT FK_Titulo_eleitor_1
-    FOREIGN KEY (FK_Documento_id_documento)
-    REFERENCES Documento (id_documento)
+ALTER TABLE titulo_eleitor ADD CONSTRAINT FK_titulo_eleitor_1
+    FOREIGN KEY (FK_documento_id_documento)
+    REFERENCES documento (id_documento)
     ON DELETE CASCADE ON UPDATE CASCADE;
  
-ALTER TABLE Titulo_eleitor ADD CONSTRAINT FK_Titulo_eleitor_2
-    FOREIGN KEY (FK_Municipio_codigo_municipio)
-    REFERENCES Municipio (codigo_municipio)
+ALTER TABLE titulo_eleitor ADD CONSTRAINT FK_titulo_eleitor_2
+    FOREIGN KEY (FK_municipio_codigo_municipio)
+    REFERENCES municipio (codigo_municipio)
     ON DELETE CASCADE ON UPDATE CASCADE;
  
-ALTER TABLE Documento ADD CONSTRAINT FK_Documento_1
-    FOREIGN KEY (FK_Aluno_matricula)
-    REFERENCES Aluno (matricula)
+ALTER TABLE documento ADD CONSTRAINT FK_documento_1
+    FOREIGN KEY (FK_orgao_emissor_codigo_oe)
+    REFERENCES orgao_emissor (codigo_oe)
+    ON DELETE CASCADE ON UPDATE CASCADE;
+ 
+ALTER TABLE documento ADD CONSTRAINT FK_documento_2
+    FOREIGN KEY (FK_aluno_matricula)
+    REFERENCES aluno (matricula)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
  
-ALTER TABLE Documento ADD CONSTRAINT FK_Documento_2
-    FOREIGN KEY (FK_Tipo_documento_codigo_tipo)
-    REFERENCES Tipo_documento (codigo_tipo)
+ALTER TABLE documento ADD CONSTRAINT FK_documento_3
+    FOREIGN KEY (FK_tipo_documento_codigo_tipo)
+    REFERENCES tipo_documento (codigo_tipo)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Pertence_Orgao_emissor_RG_Titulo_eleitor ADD CONSTRAINT FK_Pertence_Orgao_emissor_RG_Titulo_eleitor_0
-    FOREIGN KEY (FK_Orgao_emissor_codigo_oe)
-    REFERENCES Orgao_emissor (codigo_oe)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Pertence_Orgao_emissor_RG_Titulo_eleitor ADD CONSTRAINT FK_Pertence_Orgao_emissor_RG_Titulo_eleitor_1
-    FOREIGN KEY (FK_RG_FK_Documento_id_documento)
-    REFERENCES RG (FK_Documento_id_documento)
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
- 
-ALTER TABLE Pertence_Orgao_emissor_RG_Titulo_eleitor ADD CONSTRAINT FK_Pertence_Orgao_emissor_RG_Titulo_eleitor_2
-    FOREIGN KEY (FK_Titulo_eleitor_FK_Documento_id_documento)
-    REFERENCES Titulo_eleitor (FK_Documento_id_documento)
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
