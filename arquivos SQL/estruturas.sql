@@ -1,5 +1,3 @@
-/* Lógico_1: */
-
 CREATE TABLE aluno (
     nome Varchar(150),
     matricula Varchar(13) PRIMARY KEY,
