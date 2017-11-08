@@ -10,14 +10,14 @@ CREATE TABLE rg (
     nome_pai Varchar(150),
     nome_mae Varchar(150),
     data_de_nascimento Date,
-    FK_documento_id_documento Unsigned Integer PRIMARY KEY,
+    FK_documento_id_documento Integer PRIMARY KEY,
     FK_uf_codigo_uf Serial
 );
 
 CREATE TABLE titulo_eleitor (
     zona Integer,
     secao Integer,
-    FK_documento_id_documento Unsigned Integer PRIMARY KEY,
+    FK_documento_id_documento Integer PRIMARY KEY,
     FK_municipio_codigo_municipio Serial
 );
 
@@ -42,8 +42,8 @@ CREATE TABLE curso (
 );
 
 CREATE TABLE documento (
-    numero_documento Unsigned Integer,
-    id_documento Unsigned Integer PRIMARY KEY,
+    numero_documento  Integer,
+    id_documento Integer PRIMARY KEY,
     data_de_expedicao Date,
     FK_orgao_emissor_codigo_oe Serial,
     FK_aluno_matricula Varchar(13),
