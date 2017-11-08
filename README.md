@@ -58,7 +58,7 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br>
 ### 5.MODELO CONCEITUAL<br>
    
 - [Modelo Conceitual](https://github.com/khronos-SDA/trab01/blob/master/images/conceitual.png)       
-    
+  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/conceitual.png)  
 #### 5.1 Validação do Modelo Conceitual
 
    -**NetIfes**: Jardielma<br>
@@ -145,7 +145,7 @@ que o único atributo associado a tabela "cpf" seria o número do cpf em si, que
 
 ### 6	MODELO LÓGICO<br>
 - [Modelo lógico](https://github.com/khronos-SDA/trab01/blob/master/images/logico.png)
-
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/logico.png)
 
 ### 7	MODELO FÍSICO<br>
 - [Modelo físico](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/estruturas.sql)
@@ -167,7 +167,7 @@ que o único atributo associado a tabela "cpf" seria o número do cpf em si, que
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) 
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/select.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.1)
-
+![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.1)
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/where.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.2)
