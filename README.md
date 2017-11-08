@@ -171,7 +171,7 @@ que o único atributo associado a tabela "cpf" seria o número do cpf em si, que
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/where.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.2)
-
+![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.2)
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 6)
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/operadores.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.3)
