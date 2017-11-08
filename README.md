@@ -189,11 +189,17 @@ que o único atributo associado a tabela "cpf" seria o número do cpf em si, que
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.3)
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20aritmetica%209.3.3.png)
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20aritmetica%209.3.4.png)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20logica%209.3.1.png)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20logica%209.3.2.png)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20update%209.3.5.png)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20update%209.3.6.png)
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 4) <br>
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/like.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.4)
-  ![Alt Text](https://github.com/khro](https://githubnos-SDA/trab01/blob/master/images/Consultas%209.4)
-
+  ![Alt Text](httpshttps://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4/like%209.4.1.png)
+  ![Alt Text](httpshttps://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4/like%209.4.2.png)
+  ![Alt Text](httpshttps://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4/like%209.4.3.png)
+  ![Alt Text](httpshttps://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4/like%209.4.4.png)
 >## Marco de Entrega 03 em: 06/11/2017<br>
     
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
