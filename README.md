@@ -139,7 +139,7 @@ que o único atributo associado a tabela "CPF" seria o número do cpf em si, que
  
 *__TIPO CONTATO__*: Tabela que contém as informações dos meios de contatos fornecidos pelos alunos<br>
 - *codigo_tipo*: código identificador de cada tipo de contato na base de dados<br>
-- *descrição*: descrição de cada tipo de contato fornecido<br>
+- *descrição*: descrição de cada tipo de contato fornecido<br/>
 
 
 
