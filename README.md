@@ -61,8 +61,8 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br>
     
 #### 5.1 Validação do Modelo Conceitual
 
-   **NetIfes**: Jardielma<br>
-   **Ido**: Tadeu<br>
+   -**NetIfes**: Jardielma<br>
+   -**Ido**: Tadeu<br>
 
 #### 5.2 DECISÕES DE PROJETO
 
@@ -141,6 +141,7 @@ que o único atributo associado a tabela "CPF" seria o número do cpf em si, que
 - *codigo_tipo*: código identificador de cada tipo de contato na base de dados<br>
 - *descrição*: descrição de cada tipo de contato fornecido<br>
 
+
 ### 6	MODELO LÓGICO<br>
 - [Modelo lógico](https://github.com/khronos-SDA/trab01/blob/master/images/logico.png)
 
@@ -151,21 +152,13 @@ que o único atributo associado a tabela "CPF" seria o número do cpf em si, que
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físic
-        b) formato .SQL
+- [Script SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/insert.sql)
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
-        (create para tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+- [Script SQL 8.2](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/createANDinsert.sql)
+
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
-        (Drop table + Create de tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+- [Script SQL 8.3](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/dropCreateInsert.sql)
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
