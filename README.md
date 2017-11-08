@@ -187,11 +187,12 @@ que o único atributo associado a tabela "cpf" seria o número do cpf em si, que
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 6)
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/operadores.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.3)
-  ![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.3)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20aritmetica%209.3.3.png)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20aritmetica%209.3.4.png)
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 4) <br>
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/like.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.4)
-  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4)
+  ![Alt Text](https://github.com/khro](https://githubnos-SDA/trab01/blob/master/images/Consultas%209.4)
 
 >## Marco de Entrega 03 em: 06/11/2017<br>
     
