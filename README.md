@@ -250,7 +250,106 @@ ALTER TABLE documento ADD CONSTRAINT FK_documento_3
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
 - [Script SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/insert.sql)
+```
 
+insert into curso(codigo_curso, nome) values 
+    (1, 'BSI'),
+    (2, 'CECA'),
+    (3,'TPMI'),
+    (4,'TPMAI'),
+    (5,'TPMMSI'),
+    (6,'TIIMI'),
+    (7,'TIMAI');
+
+
+insert into uf(codigo_uf, nome) values 
+    (1, 'RN'),
+    (2, 'ES'),
+    (3, 'AM'),
+    (4, 'BR'),
+    (5, 'MA'),
+    (6, 'MG'),
+    (7, 'RS'),
+    (8, 'SC'),
+    (9, 'AC'),
+    (10, 'RJ');
+
+
+insert into municipio(codigo_municipio, nome_municipio) values
+    (1, 'Mossoró'),
+    (2, 'Viana'),
+    (3, 'Vitória'),
+    (4, 'Serra'),
+    (5, 'Vila Velhaó'),
+    (6, 'Mangueirinha'),
+    (7, 'Docas do Rio Preto'),
+    (8, 'Ribeirão Branco');
+
+
+insert into orgao_emissor(codigo_oe, nome) values
+    (1, 'SESP'),
+    (2, 'Receita Federal do Brasil'),
+    (3, 'Tribunal Superior Eleitoral');
+
+
+insert into tipo_documento(codigo_tipo, descricao) values
+    (1, 'CPF'),
+    (2, 'RG'),
+    (3, 'Título de Eleitor');
+
+
+insert into aluno(nome, matricula, fk_curso_codigo_curso) values
+    ('Vinicius Santos Tosta', '20091ceca0125', 2), 
+    ('Tiago Souza Alves', '20122bsi0847', 1),
+    ('Yasmin Cardoso Oliveira', '20161bsi5512', 1),
+    ('Rafaela Castro Gomes', '20142ceca6398', 2),
+    ('Fábio Barros Rodrigues', '20171ceca1234', 2),
+    ('Carolina Cavalcanti  Araújo ', '20152bsi7845', 1),
+    ('Alice  Sousa da Silva', '20172bsi0981', 1),
+    ('Vitor Pereira Alves', '20151ceca0025', 2),
+    ('Júlio Lima Azevedo', '20172ceca5598', 2),
+    ('Julieta Oliveira Fernandes', '20132bsi6647', 1); 
+
+
+    insert into documento(numero_documento, id_documento, data_de_expedicao, fk_orgao_emissor_codigo_oe, fk_aluno_matricula, fk_tipo_documento_codigo_tipo) values
+    (974909  , 3, '1980-08-29', 1, '20091ceca0125',2),
+    (569542 , 4, '2007-09-08', 1, '20122bsi0847',2),
+    (484562 , 5, '2001-12-22', 1, '20161bsi5512',2),
+    (716601 , 6, '2002-02-09', 1, '20142ceca6398',2),
+    (119774 , 7, '1999-08-02', 1, '20171ceca1234',2),
+    (880910 , 8, '2007-08-09', 1, '20152bsi7845',2),
+    (909514 , 9, '1999-07-06', 1, '20172bsi0981',2),
+    (955706 , 13, '2001-11-08', 1, '20151ceca0025',2),
+    (104295 , 11, '1988-04-02', 1, '20172ceca5598',2),
+    (713636 , 10, '2007-07-07', 1, '20132bsi6647',2);
+
+
+insert into titulo_eleitor(zona,secao,fk_documento_id_documento,fk_municipio_codigo_municipio) values
+    (007,0098,3,1),
+    (051,0058,4,2),
+    (019,0022,5,3),
+    (078,0093,6,3),
+    (025,0017,7,4),
+    (036,0008,8,4),
+    (099,0029,9,5),
+    (014,0019,10,6),
+    (087,0066,11,7),
+    (255,0043,13,8);
+
+
+insert into rg(nome_pai, nome_mae, data_de_nascimento,fk_documento_id_documento, fk_uf_codigo_uf) values
+    ('José Eduardo Correia Tosta', 'Maria Madalena Santos Tosta', '1989-05-28', 3, 1),
+    ('Augusto Caio Heitor Alves', 'Amanda Castro Souza', '1990-11-04', 4, 1),
+    ('Lorenzo Diogo Nicolas Oliveira', 'Bruna Santos Cardoso', '1984-08-24', 5, 1),
+    ('Tomás Vitor Gomes', 'Giovanna Pinto Castro', '1994-09-29', 6, 3),
+    ('Samuel Henry Rodrigues', 'Marina Dias Barros', '1988-11-26', 7, 4),
+    ('Anthony Benício Marcelo Araújo', 'Nicole Cardoso Cavalcanti', '1985-08-15', 8, 5),
+    ('João Augusto da Silva', 'Larissa Rocha Sousa', '1999-09-09', 9, 1),
+    ('Estevan Martins Alves', 'Leila Almeida Pereira', '1982-03-12', 10, 1),
+    ('Pedro Castro Azevedo', 'Luiza Rodrigues Lima', '1975-05-16', 11, 1),
+    ('Nicolas Rodrigues Fernandes', 'Luana Castro Oliveira', '1988-02-08', 13, 1);
+
+```
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
 - [Script SQL 8.2](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/createANDinsert.sql)
 
