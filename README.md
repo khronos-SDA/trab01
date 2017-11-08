@@ -130,7 +130,7 @@ que o único atributo associado a tabela "CPF" seria o número do cpf em si, que
  
 *__MUNICÍPIO__*: Tabela que contém os dados relacionados a cada município<br>
 - *codigo_municipio*: campo que armazena o código atribuído a cada município na base de dados<br>
-- *nome_municipio*: campo que armazena cada município cadastrado na base de dados<b/>
+- *nome_municipio*: campo que armazena cada município cadastrado na base de dados<br/>
 
 *__CONTATO__*: Tabela que relaciona os contatos de cada aluno<br>
 - *matricula*: código identificador do aluno na base de dados<br>
