@@ -145,7 +145,7 @@ que o único atributo associado a tabela "cpf" seria o número do cpf em si, que
 
 ### 6	MODELO LÓGICO<br>
 - [Modelo lógico](https://github.com/khronos-SDA/trab01/blob/master/images/logico.png)
-![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/logico.png)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/logico.png)
 
 ### 7	MODELO FÍSICO<br>
 - [Modelo físico](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/estruturas.sql)
@@ -167,19 +167,19 @@ que o único atributo associado a tabela "cpf" seria o número do cpf em si, que
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) 
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/select.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.1)
-![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.1)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.1)
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/where.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.2)
-![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.2)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.2)
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 6)
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/operadores.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.3)
-![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.3)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.3)
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 4) <br>
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/like.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.4)
-![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.4)
+  ![Alt Text](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.4)
 >## Marco de Entrega 03 em: 06/11/2017<br>
     
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
