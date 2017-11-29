@@ -399,8 +399,21 @@ insert into rg(nome_pai, nome_mae, data_de_nascimento,fk_documento_id_documento,
     
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
-        a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
-        b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+```
+select a.nome as aluno,c.nome as curso ,d.numero_documento,oe.nome as "orgao emissor",td.descricao,d.data_de_expedicao 
+from curso as c 
+inner join aluno as a on(c.codigo_curso=a.fk_curso_codigo_curso)
+inner join documento as d on(a.matricula=d.fk_aluno_matricula)
+inner join orgao_emissor as oe on(d.fk_orgao_emissor_codigo_oe=oe.codigo_oe)
+inner join tipo_documento as td on(d.fk_tipo_documento_codigo_tipo=td.codigo_tipo)
+inner join titulo_eleitor as te on(d.id_documento=te.fk_documento_id_documento)
+inner join municipio as m on(m.codigo_municipio=te.fk_municipio_codigo_municipio)
+inner join rg on(rg.fk_documento_id_documento=d.id_documento)
+inner join uf on(rg.fk_uf_codigo_uf=uf.codigo_uf);
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.6/consulta%209.6.1.PNG)
+        a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado<br>
+        b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho<br>
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
