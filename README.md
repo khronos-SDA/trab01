@@ -444,6 +444,27 @@ where date_part('year',rg.data_de_nascimento)<1997
 order by rg.data_de_nascimento;
 ```
 ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.6/consulta%209.6.4.PNG)
+```
+select a.matricula,a.nome,rg.data_de_nascimento from aluno as a
+inner join documento as d
+on(a.matricula=d.fk_aluno_matricula)
+inner join rg
+on(rg.fk_documento_id_documento=d.id_documento)
+where a.matricula like '2017%' and date_part('year',age(rg.data_de_nascimento))>=18
+order by a.matricula;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.6/consulta%209.6.5.PNG)
+```
+select a.matricula,a.nome,m.nome_municipio from aluno as a
+inner join documento as d
+on(a.matricula=d.fk_aluno_matricula)
+inner join titulo_eleitor as te
+on(te.fk_documento_id_documento=d.id_documento)
+inner join municipio as m
+on(m.codigo_municipio=te.fk_municipio_codigo_municipio)
+where m.nome_municipio in ('Serra','Vitória');
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.6/consulta%209.6.6.PNG)
 
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado<br>
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho<br>
