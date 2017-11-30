@@ -412,6 +412,39 @@ inner join rg on(rg.fk_documento_id_documento=d.id_documento)
 inner join uf on(rg.fk_uf_codigo_uf=uf.codigo_uf);
 ```
 ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.6/consulta%209.6.1.PNG)
+```
+select a.matricula,a.nome,d.numero_documento,td.descricao from documento as d
+inner join aluno as a
+on(d.fk_aluno_matricula=a.matricula)
+inner join tipo_documento as td
+on(d.fk_tipo_documento_codigo_tipo=td.codigo_tipo);
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.6/consulta%209.6.2.PNG)
+```
+select a.matricula,a.nome,count(td.codigo_tipo) as "numero de documentos diferentes",count(a.matricula) as "numero de documentos" 
+from documento as d
+inner join aluno as a
+on(d.fk_aluno_matricula=a.matricula)
+inner join tipo_documento as td
+on(d.fk_tipo_documento_codigo_tipo=td.codigo_tipo)
+inner join curso as c
+on(c.codigo_curso=a.fk_curso_codigo_curso)
+where c.codigo_curso=1
+group by a.matricula
+order by a.matricula;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.6/consulta%209.6.3.PNG)
+```
+select d.fk_aluno_matricula,a.nome from documento as d
+inner join rg
+on(d.id_documento=rg.fk_documento_id_documento)
+inner join aluno as a
+on(a.matricula=d.fk_aluno_matricula)
+where date_part('year',rg.data_de_nascimento)<1997
+order by rg.data_de_nascimento;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.6/consulta%209.6.4.PNG)
+
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado<br>
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho<br>
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇES DE AGRUPAMENTO (Mínimo 6)<br>
