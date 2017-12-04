@@ -100,11 +100,7 @@ que o único atributo associado a tabela "cpf" seria o número do cpf em si, que
 - *código_uf*: campo que armazena o código relacionado a Unidade Federativa onde o documento foi expedido<br>
 - *data_expedição*: campo que armazena a data em que o documento foi expedido<br>
 - *código_oe*: campo que armazena o código do órgão emissor do documento em questão<br>
-    
-*__CPF__*: Tabela que contém os dados do CPF do aluno<br>
-- *codigo_cpf*: campo que armazena o número do cpf do aluno<br>
-- *código_oe*: campo que armazena o código do órgão emissor do documento em questão<br>
-    
+        
 *__TÍTULO ELEITOR__*: Tabela que contém os dados do Título de Eleitor do aluno<br>
 - *codigo_titulo*: campo que armazena o código identificador do título na base de dados da Justiça Eleitoral<br>
 - *zona*: campo que armazena o código identificador da zona eleitoral em que o aluno vota<br>
