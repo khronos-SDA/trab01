@@ -144,7 +144,7 @@ que o único atributo associado a tabela "cpf" seria o número do cpf em si, que
 
 
 ### 6	MODELO LÓGICO<br>
-- [Modelo lógico](https://github.com/khronos-SDA/trab01/blob/master/images/logico.png)
+- [Modelo lógico](https://github.com/khronos-SDA/trab01/blob/master/Modelo%20Entidade%20Relacionamento/L%C3%B3gico_1.brM3)
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/logico.png)
 
 ### 7	MODELO FÍSICO<br>
