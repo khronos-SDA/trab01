@@ -174,6 +174,7 @@ CREATE TABLE titulo_eleitor (
 CREATE TABLE municipio (
     codigo_municipio Serial PRIMARY KEY,
     nome_municipio Varchar(150),
+    FK_UF_CodigoUF Serial
 );
 
 CREATE TABLE orgao_emissor (
