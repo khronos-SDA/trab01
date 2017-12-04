@@ -173,7 +173,7 @@ CREATE TABLE titulo_eleitor (
 
 CREATE TABLE municipio (
     codigo_municipio Serial PRIMARY KEY,
-    nome_municipio Varchar(150)
+    nome_municipio Varchar(150),
 );
 
 CREATE TABLE orgao_emissor (
