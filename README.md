@@ -81,8 +81,8 @@ caso (CPF, RG ou Titulo Eleitor).
 seja associada a "uf".
     
 - A tabela "cpf" está omitida, tendo sua existencia em nosso modelo associada a tabela "documento" uma vez
-que o único atributo associado a tabela "cpf" seria o número do cpf em si, que está sendo representado por
-"id_documento" na tabela "Documento".
+que os únicos atributos associados a tabela "cpf" é o número do cpf em si (número do documento) e a data de 
+expedição do mesmo, que estão sendo representado por "id_documento" e "data_de_expedicao" dentro da tabela "documento".
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
                                             ==> TABELAS RELACIONADAS AOS ALUNOS <==
