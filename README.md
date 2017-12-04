@@ -57,7 +57,7 @@ O sistema proposto poderá fornecer os seguintes relatórios:<br>
 
 ### 5.MODELO CONCEITUAL<br>
    
-- [Modelo Conceitual](https://github.com/khronos-SDA/trab01/blob/master/images/conceitual.png)       
+- [Modelo Conceitual](https://github.com/khronos-SDA/trab01/blob/master/Modelo%20Entidade%20Relacionamento/Conceitual.png)       
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/conceitual.png)  
 #### 5.1 Validação do Modelo Conceitual
 
