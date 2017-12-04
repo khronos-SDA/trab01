@@ -31,7 +31,7 @@ O banco de dados do sistema deverá permitir atualização dos documentos quando
 
 As vantagens da digitalização de documentos consiste na maior segurança dos dados, pois o controle de acesso permite que somente pessoas autorizadas com níveis de acesso de acordo com seu perfil possam acessar os documentos; rapidez na busca, evitando assim perda de tempo; diminuição de espaço físico para armazenamento de documentos; prevenção da perda de documentos devido a deterioração ou acontecimentos tais como: enchentes, incêndios ou até mesmo acidentes banais, como derrubar xícara de café naquele documento importante que estava sobre a mesa ou rasgo acidental. E o mais importante: diminuição do uso de papel, impactando positivamente na redução de produção de papel e seus custos diretos e indiretos.
 
-De RG serão armazenados seu número, nome do pai e da mãe e data de expedição do documento. De CPF serão armazenados apenas o número do próprio documento, e a sua data de expedição. De Título de Eleitor serão armazenados seu número, seção, zona e a sua data de expedição.
+De RG será armazenado seu número, nome do pai e da mãe e data de expedição. De CPF será armazenado apenas o seu número. De Título de Eleitor será armazenado seu número, seção e zona.
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 - [Mockups](https://github.com/khronos-SDA/trab01/blob/master/Prototipo/Khronos.pdf)
@@ -81,8 +81,8 @@ caso (CPF, RG ou Titulo Eleitor).
 seja associada a "uf".
     
 - A tabela "cpf" está omitida, tendo sua existencia em nosso modelo associada a tabela "documento" uma vez
-que os únicos atributos associados a tabela "cpf" é o número do cpf em si (número do documento) e a data de 
-expedição do mesmo, que estão sendo representado por "id_documento" e "data_de_expedicao" dentro da tabela "documento".
+que o único atributo associado a tabela "cpf" seria o número do cpf em si, que está sendo representado por
+"id_documento" na tabela "Documento".
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
                                             ==> TABELAS RELACIONADAS AOS ALUNOS <==
@@ -99,6 +99,10 @@ expedição do mesmo, que estão sendo representado por "id_documento" e "data_d
 - *mãe*: campo que armazena nome da mãe do aluno<br>
 - *código_uf*: campo que armazena o código relacionado a Unidade Federativa onde o documento foi expedido<br>
 - *data_expedição*: campo que armazena a data em que o documento foi expedido<br>
+- *código_oe*: campo que armazena o código do órgão emissor do documento em questão<br>
+    
+*__CPF__*: Tabela que contém os dados do CPF do aluno<br>
+- *codigo_cpf*: campo que armazena o número do cpf do aluno<br>
 - *código_oe*: campo que armazena o código do órgão emissor do documento em questão<br>
     
 *__TÍTULO ELEITOR__*: Tabela que contém os dados do Título de Eleitor do aluno<br>
@@ -359,38 +363,110 @@ insert into rg(nome_pai, nome_mae, data_de_nascimento,fk_documento_id_documento,
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) 
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/select.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.1)
+```
+select * from aluno;
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20aluno.png)
+```
+select * from curso;
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20curso.png)
-  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20documento.png)
-  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20municipio.png)
-  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20orgao_emissor.png)
-  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20rg.png)
-  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20tipo_documento.png)
-  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20titulo_eleitor.png)
-  ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20uf.png)
+```
+select * from documento;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20documento.png)
+```
+select * from municipio;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20municipio.png)
+```
+select * from orgao_emissor;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20orgao_emissor.png)
+```
+select * from rg;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20rg.png)
+```
+select * from tipo_documento;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20tipo_documento.png)
+```
+select * from titulo_eleitor;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20titulo_eleitor.png)
+```
+select * from uf;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.1/select%20tabela%20uf.png)
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/where.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.2)
+```
+select * from municipio where nome_municipio='Serra';
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.2/filtro%20where%209.2.1.png)
+```
+select * from curso where nome='BSI';
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.2/filtro%20where%209.2.2.png)
+```
+select * from aluno where fk_curso_codigo_curso=1;
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.2/filtro%20where%209.2.3.png)
+```
+select * from titulo_eleitor where fk_municipio_codigo_municipio=4;
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.2/filtro%20where%209.2.4.png)
+```
+select * from rg where fk_uf_codigo_uf=1;
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.2/filtro%20where%209.2.5.png)
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 6)
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/operadores.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.3)
+```
+select * from rg where nome_mae='Luiza' or fk_uf_codigo_uf=1; 
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20aritmetica%209.3.3.png)
+```
+select * from rg where nome_mae='Luiza' or fk_uf_codigo_uf=3; 
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20aritmetica%209.3.4.png)
+```
+select * from documento where data_de_expedicao > '2000-01-01' and id_documento >10;
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20logica%20%209.3.1.png)
+```
+select * from rg where data_de_nascimento > '1990-01-01';
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20logica%20%209.3.2.png)
+```
+update aluno set nome = 'Alice Bittencourt Barros de Arruda' where matricula = '20172bsi0981';
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20update%209.3.5.png)
+```
+update curso set nome ='Engenharia Mecânica' where codigo_curso=1;
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.3/consulta%20update%209.3.6.png)
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 4) <br>
 - [Consultas SQL](https://github.com/khronos-SDA/trab01/blob/master/arquivos%20SQL/like.sql)
 - [Prints](https://github.com/khronos-SDA/trab01/tree/master/images/Consultas%209.4)
+```
+select * from aluno where nome like 'V%';
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4/like%209.4.1.png)
+```
+select * from rg where nome_pai like 'J%';
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4/like%209.4.2.png)
+```
+select * from municipio where nome_municipio like 'M%';
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4/like%209.4.3.png)
+```
+select * from rg where nome_mae like 'L%';
+```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4/like%209.4.4.png)
 >## Marco de Entrega 03 em: 06/11/2017<br>
     
