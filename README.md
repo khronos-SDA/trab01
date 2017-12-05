@@ -535,9 +535,56 @@ where m.nome_municipio in ('Serra','Vitória');
 ```
 ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.6/consulta%209.6.6.PNG)
 
-        a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado<br>
-        b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho<br>
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇES DE AGRUPAMENTO (Mínimo 6)<br>
+```
+select rg.data_de_nascimento,count(rg.data_de_nascimento) as "Quantidade de alunos nascidos nesta data" from documento as d
+inner join rg
+on(d.id_documento=rg.fk_documento_id_documento)
+group by rg.data_de_nascimento;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.7/9.7.1.PNG)
+```
+select date_part('year',age(rg.data_de_nascimento)) as 
+idade,count(date_part('year',age(rg.data_de_nascimento))) as "Quantidade de alunos" 
+from documento as d
+inner join rg
+on(d.id_documento=rg.fk_documento_id_documento)
+group by date_part('year',age(rg.data_de_nascimento));
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.7/9.7.2.PNG)
+```
+select c.nome as curso,count(c.nome) as "Número de alunos " from curso as c
+inner join aluno as a
+on(c.codigo_curso=a.fk_curso_codigo_curso)
+group by c.nome;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.7/9.7.3.PNG)
+```
+select avg(date_part('year',age(rg.data_de_nascimento))) 
+as "Idade Média dos alunos da Instituição" from documento as d
+inner join rg
+on(d.id_documento=rg.fk_documento_id_documento);
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.7/9.7.4.PNG)
+```
+select c.nome,avg(date_part('year',age(rg.data_de_nascimento))) 
+as "Idade Média dos alunos (anos)" from curso as c
+inner join aluno as a
+on(c.codigo_curso=a.fk_curso_codigo_curso)
+inner join documento as d
+on(a.matricula=d.fk_aluno_matricula)
+inner join rg
+on(d.id_documento=rg.fk_documento_id_documento)
+group by c.nome;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.7/9.7.5.PNG)
+```
+select fk_aluno_matricula as matricula,
+count(fk_aluno_matricula) as "Número de documentos cadastrados"
+from documento
+group by fk_aluno_matricula;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.7/9.7.6.PNG)
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
