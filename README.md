@@ -277,7 +277,7 @@ insert into municipio(codigo_municipio, nome_municipio) values
     (2, 'Viana'),
     (3, 'Vitória'),
     (4, 'Serra'),
-    (5, 'Vila Velhaó'),
+    (5, 'Vila Velha'),
     (6, 'Mangueirinha'),
     (7, 'Docas do Rio Preto'),
     (8, 'Ribeirão Branco');
