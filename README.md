@@ -31,7 +31,7 @@ O banco de dados do sistema deverá permitir atualização dos documentos quando
 
 As vantagens da digitalização de documentos consiste na maior segurança dos dados, pois o controle de acesso permite que somente pessoas autorizadas com níveis de acesso de acordo com seu perfil possam acessar os documentos; rapidez na busca, evitando assim perda de tempo; diminuição de espaço físico para armazenamento de documentos; prevenção da perda de documentos devido a deterioração ou acontecimentos tais como: enchentes, incêndios ou até mesmo acidentes banais, como derrubar xícara de café naquele documento importante que estava sobre a mesa ou rasgo acidental. E o mais importante: diminuição do uso de papel, impactando positivamente na redução de produção de papel e seus custos diretos e indiretos.
 
-De RG será armazenado seu número, nome do pai e da mãe e data de expedição. De CPF será armazenado apenas o seu número. De Título de Eleitor será armazenado seu número, seção e zona.
+De RG serão armazenados seu número, nome do pai e da mãe e data de expedição do documento. De CPF serão armazenados apenas o número do próprio documento, e a sua data de expedição. De Título de Eleitor serão armazenados seu número, seção, zona e a sua data de expedição.
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 - [Mockups](https://github.com/khronos-SDA/trab01/blob/master/Prototipo/Khronos.pdf)
