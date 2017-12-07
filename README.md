@@ -590,6 +590,22 @@ group by fk_aluno_matricula;
         a) Uma junção que envolva Self Join
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
+
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.10/subconsulta1.png)
+
+select matricula from aluno where fk_curso_codigo_curso in 
+	(select codigo_curso from curso where codigo_curso = 1);
+
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.10/subconsulta2.png)
+
+select numero_documento from documento where fk_orgao_emissor_codigo_oe in 
+	(select codigo_oe from orgao_emissor where codigo_oe = 1);
+
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.10/subconsulta3.png)
+
+select numero_documento from documento where fk_tipo_documento_codigo_tipo in 
+	(select codigo_tipo from tipo_documento where codigo_tipo = 2);
+
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 ### 11	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
         a) Outros grupos deverão ser capazes de restaurar o banco 
