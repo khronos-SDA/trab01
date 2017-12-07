@@ -587,6 +587,17 @@ group by fk_aluno_matricula;
 ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.7/9.7.6.PNG)
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
+
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/self join.png)
+```
+select aluno1.nome as nome_Aluno, aluno2.fk_curso_codigo_curso as codigo_Curso
+from
+aluno as aluno1
+inner join
+aluno as aluno2
+on (aluno1.nome = aluno2.nome);
+```
+
         a) Uma junção que envolva Self Join
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
