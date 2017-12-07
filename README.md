@@ -606,7 +606,7 @@ join curso on (curso.codigo_curso = aluno.fk_curso_codigo_curso);
 
 select * from alunos_e_cursos;
 ```
-![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/view1.png)
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view1.png)
 ```
 create view alunos_e_documentos as
 select aluno.nome as aluno, documento.numero_documento as "numero do documento" 
@@ -646,7 +646,7 @@ join uf on (rg.fk_uf_codigo_uf = uf.codigo_uf);
 
 select * from estado_do_aluno;
 ```
-![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view5.png)
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/view5.png)
 
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 ```
