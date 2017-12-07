@@ -587,8 +587,8 @@ group by fk_aluno_matricula;
 ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.7/9.7.6.PNG)
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-
-![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/self%20join.png)
+        a) Uma junção que envolva Self Join
+        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 ```
 select aluno1.nome as nome_Aluno, aluno2.fk_curso_codigo_curso as codigo_Curso
 from
@@ -597,9 +597,57 @@ inner join
 aluno as aluno2
 on (aluno1.nome = aluno2.nome);
 ```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/self%20join.png)
+```
+create view alunos_e_cursos as
+select aluno.nome as aluno, curso.nome as curso
+from aluno
+join curso on (curso.codigo_curso = aluno.fk_curso_codigo_curso);
 
-        a) Uma junção que envolva Self Join
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+select * from alunos_e_cursos;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view1.png)
+```
+create view alunos_e_documentos as
+select aluno.nome as aluno, documento.numero_documento as "numero do documento" 
+from aluno
+join documento on (aluno.matricula = documento.fk_aluno_matricula);
+
+select * from alunos_e_documentos;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view2.png)
+```
+create view documentos_registrados as
+select aluno.nome as aluno, tipo_documento.descricao as "documentos registrados" 
+from aluno
+join documento on (aluno.matricula = documento.fk_aluno_matricula)
+join tipo_documento on (tipo_documento.codigo_tipo = documento.fk_tipo_documento_codigo_tipo)
+
+select * from documentos_registrados;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view3.png)
+```
+create view pais_do_aluno as
+select aluno.nome as "nome do aluno", rg.nome_pai "pai do aluno", rg.nome_mae "nome da mae"
+from aluno
+join documento on (documento.fk_aluno_matricula = aluno.matricula)
+join rg on (rg.fk_documento_id_documento = documento.id_documento);
+
+select * from pais_do_aluno;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view4.png)
+```
+create view estado_do_aluno as
+select aluno.nome as "nome do aluno", uf.nome as estado
+from aluno
+join documento on (documento.fk_aluno_matricula = aluno.matricula)
+join rg on (rg.fk_documento_id_documento = documento.id_documento)
+join uf on (rg.fk_uf_codigo_uf = uf.codigo_uf);
+
+select * from estado_do_aluno;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view5.png)
+
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 ```
 select matricula 
