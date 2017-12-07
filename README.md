@@ -606,7 +606,7 @@ join curso on (curso.codigo_curso = aluno.fk_curso_codigo_curso);
 
 select * from alunos_e_cursos;
 ```
-![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view1.png)
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/view1.png)
 ```
 create view alunos_e_documentos as
 select aluno.nome as aluno, documento.numero_documento as "numero do documento" 
@@ -615,7 +615,7 @@ join documento on (aluno.matricula = documento.fk_aluno_matricula);
 
 select * from alunos_e_documentos;
 ```
-![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view2.png)
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/view2.png)
 ```
 create view documentos_registrados as
 select aluno.nome as aluno, tipo_documento.descricao as "documentos registrados" 
@@ -625,7 +625,7 @@ join tipo_documento on (tipo_documento.codigo_tipo = documento.fk_tipo_documento
 
 select * from documentos_registrados;
 ```
-![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view3.png)
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/view3.png)
 ```
 create view pais_do_aluno as
 select aluno.nome as "nome do aluno", rg.nome_pai "pai do aluno", rg.nome_mae "nome da mae"
@@ -635,7 +635,7 @@ join rg on (rg.fk_documento_id_documento = documento.id_documento);
 
 select * from pais_do_aluno;
 ```
-![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.9/view4.png)
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/view4.png)
 ```
 create view estado_do_aluno as
 select aluno.nome as "nome do aluno", uf.nome as estado
