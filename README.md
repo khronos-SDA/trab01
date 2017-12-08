@@ -468,18 +468,22 @@ select * from rg where nome_mae like 'L%';
     
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 ```
-/* Update */
 update curso set nome = 'Engenharia de Controle e Automação' where codigo_curso = 2;
 update curso set nome = 'Técnico em Informática' where codigo_curso = 3;
 update curso set nome = 'Técnico em Automação Industrial' where codigo_curso = 4;
 update curso set nome = 'Técnico em Manutenção e Suporte em Informática' where codigo_curso = 5;
 update curso set nome = 'Técnico Integrado em Informática' where codigo_curso = 6;
 update curso set nome = 'Técnico em Automação Industrial' where codigo_curso = 7;
-
-/* Delete */
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.5/update.png)
+```
 delete from municipio where codigo_municipio = 8;
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.5/delete%209.5%20(2).png)
+```
 delete from curso where codigo_curso = 5;
 ```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.5/delete%209.5.png)
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
 ```
