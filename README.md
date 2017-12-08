@@ -612,6 +612,10 @@ select numero_documento, id_documento, data_de_expedicao,documento.fk_aluno_matr
 select codigo_municipio, municipio from municipio left outer join uf on (nome_municipio = uf.nome);
 ```
 ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/left%20join%201.png)
+```
+select * from municipio right outer join uf on (codigo_municipio = codigo_uf);
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/right%20join%202.png)
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
