@@ -464,9 +464,23 @@ select * from municipio where nome_municipio like 'M%';
 select * from rg where nome_mae like 'L%';
 ```
   ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.4/like%209.4.4.png)
->## Marco de Entrega 03 em: 06/11/2017<br>
+>## Marco de Entrega 03 em: 08/12/2017<br>
     
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
+```
+/* Update */
+update curso set nome = 'Engenharia de Controle e Automação' where codigo_curso = 2;
+update curso set nome = 'Técnico em Informática' where codigo_curso = 3;
+update curso set nome = 'Técnico em Automação Industrial' where codigo_curso = 4;
+update curso set nome = 'Técnico em Manutenção e Suporte em Informática' where codigo_curso = 5;
+update curso set nome = 'Técnico Integrado em Informática' where codigo_curso = 6;
+update curso set nome = 'Técnico em Automação Industrial' where codigo_curso = 7;
+
+/* Delete */
+delete from municipio where codigo_municipio = 8;
+delete from curso where codigo_curso = 5;
+```
+
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
 ```
 select a.nome as aluno,c.nome as curso ,d.numero_documento,oe.nome as "orgao emissor",td.descricao,d.data_de_expedicao 
