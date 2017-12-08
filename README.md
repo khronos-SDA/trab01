@@ -604,6 +604,15 @@ group by fk_aluno_matricula;
 ```
 ![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.7/9.7.6.PNG)
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
+```
+select numero_documento, id_documento, data_de_expedicao,documento.fk_aluno_matricula from documento right outer join aluno on (documento.fk_aluno_matricula = aluno.matricula);
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/right%20join%201.png)
+```
+select codigo_municipio, municipio from municipio left outer join uf on (nome_municipio = uf.nome);
+```
+![Alt Text](https://github.com/khronos-SDA/trab01/blob/master/images/Consultas%209.8/left%20join%201.png)
+
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
