@@ -185,16 +185,3 @@ insert into rg(nome_pai, nome_mae, data_de_nascimento,fk_documento_id_documento,
 insert into rg(nome_pai, nome_mae, data_de_nascimento,fk_documento_id_documento, fk_uf_codigo_uf) values ('Estevan Martins Alves', 'Leila Almeida Pereira', '1982-03-12', 10, 1);
 insert into rg(nome_pai, nome_mae, data_de_nascimento,fk_documento_id_documento, fk_uf_codigo_uf) values ('Pedro Castro Azevedo', 'Luiza Rodrigues Lima', '1975-05-16', 11, 1);
 insert into rg(nome_pai, nome_mae, data_de_nascimento,fk_documento_id_documento, fk_uf_codigo_uf) values ('Nicolas Rodrigues Fernandes', 'Luana Castro Oliveira', '1988-02-08', 13, 1);
-
-
-
-
-
-
-
-
-
-
-
-
-
